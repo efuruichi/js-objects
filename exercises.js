@@ -94,7 +94,14 @@ console.log(plainBox);
 
     console.log the object
 */
-
+var stockCar = {
+    model: 'Ford',
+    year: 2011,
+    automaticTransmission: true,
+    drive: 'null',
+    passengers: []
+}
+console.log(stockCar);
 
 /*
 
