@@ -128,8 +128,6 @@ function buildPerson(person, nameString, age){
     return person;
 }
 
-buildPerson('Julia Roberts', 50);
-
 var completePerson = buildPerson(plainPerson, 'Jimmy McGill', 50);
 
 console.log(completePerson);
@@ -161,7 +159,8 @@ console.log(completePerson.age);
             ...
  */
 
-[
+
+ var arrayOfObjects = [
     {
       id: 0,
       date: "Monday Jan 25 2015 2:01 PM",
@@ -213,7 +212,17 @@ console.log(completePerson.age);
       total: "194.33"
     }
   ]
-
+  function printOrders(orders){
+    for (var i = 0; i < orders.length; i++){
+      console.log(orders[i]);
+      console.log("id: " + orders[i].id);
+      console.log("Purchase date: " + orders[i].date);
+      console.log("Purchase total: " + orders[i].total);
+    }
+  
+    return 
+ }
+  printOrders(arrayOfObjects)
 
 
 
@@ -229,6 +238,18 @@ console.log(completePerson.age);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+var sumObj = {a: 0, b: 1, result: undefined}
+
+function objectAddition(obj){
+  console.log(obj);
+  console.log(obj.a + obj.b);
+  console.log(obj.result);
+  
+  obj.result = obj.a + obj.b
+  return obj
+}
+var sumObjResult = objectAddition(sumObj)
+console.log(sumObjResult);
 
 
 /*
